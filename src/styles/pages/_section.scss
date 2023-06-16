@@ -1,1 +1,11 @@
-.section {}
+.section {
+    max-width: 1000px;
+    width:100%;
+    margin-inline:auto;
+    border: 1px solid pink;
+
+    @include min-md {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    } 
+}
