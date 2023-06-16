@@ -1,15 +1,17 @@
 import request from "@/lib/request"
 
 // ** Types
-import IUser from "@/types/user"
+import IUser, {GetUserParams} from "@/types/user"
 
-const UserService = () => {
+
+const UserService = (props : GetUserParams = {}) => {
 
     const getUsers = () : Promise<IUser[]> => {
-
+        const { params } = props
         return request ({
             url: "/users",
             method: "GET",
+            params : params
         })
     }
 
