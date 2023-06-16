@@ -6,12 +6,12 @@ const useGetUsers = () => {
     const { getUsers } =  UserService()
 
     // Abstract useQuery in case we decide to no longer use this in the future
-    const { data, isLoading } = useQuery({
+    const { data : users, isLoading } = useQuery({
         queryFn : getUsers,
         queryKey : ['users']
     })
     
-    return { data, isLoading }
+    return { users, isLoading }
 }  
 
 export default useGetUsers
