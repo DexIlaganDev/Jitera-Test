@@ -1,12 +1,16 @@
-import Card from "./components/Card/Card.component"
+import {QueryClientProvider, QueryClient} from '@tanstack/react-query';
+import JiteraPage from '@/pages/Jitera';
 
+
+const queryClient = new QueryClient();
 
 function App() {
 
   return (
-    <>
-      <Card />
-    </>
+    <QueryClientProvider client={queryClient}>
+      <JiteraPage />    
+    </QueryClientProvider>
+      
   )
 }
 
