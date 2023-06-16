@@ -10,7 +10,7 @@ const useGetUsers = () => {
         queryFn : getUsers,
         queryKey : ['users']
     })
-
+    
     return { data, isLoading }
 }  
 
