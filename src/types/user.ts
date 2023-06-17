@@ -23,3 +23,9 @@ interface ICompany {
     catchPhrase : string
     name : string
 }
+
+export type GetUserParams = {
+    params? : {
+        _limit? : number
+   }
+}
