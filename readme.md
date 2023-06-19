@@ -21,5 +21,6 @@
 
 ### Approach
 I tried Coding as much as possible with SOLID principles in mind. 
-Also usage of HOC, Typescript Generics, and DRY Code to extend components reusability.
+Also usage of HOC, Typescript Generics, and DRY Code to extend components reusability and 
+**Accessibility for screen readers.**
 
