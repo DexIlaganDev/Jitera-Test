@@ -19,7 +19,7 @@ const JiteraPage = () => {
     const { users, isLoading } = useGetUsers()
 
     return (
-        <Grid className='jitera-page' container spacing={3}>
+        <Grid className='jitera-page' container spacing={3} rowGap={5}>
             {
                 users?.map( user => (
                     <UserCol key={user.id} sm={3}>
