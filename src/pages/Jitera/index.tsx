@@ -22,7 +22,7 @@ const JiteraPage = () => {
         <Grid className='jitera-page' container spacing={3} rowGap={5}>
             {
                 users?.map( user => (
-                    <UserCol key={user.id} sm={3}>
+                    <UserCol key={user.id} sm={6} md={3}>
                         <User user={user} />    
                     </UserCol>
                 ))
