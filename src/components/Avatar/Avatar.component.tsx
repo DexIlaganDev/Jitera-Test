@@ -6,10 +6,11 @@ import constants from "@/constants";
 
 type AvatarProps = {
     username? : string
+    alt? : string
 }
 const Avatar = (props : AvatarProps) => {
 
-    const { username } = props;
+    const { username, alt } = props;
 
     const getAvatar = (name? : string) => {
         
@@ -19,7 +20,7 @@ const Avatar = (props : AvatarProps) => {
                 ?? constants.api.brokenImageLink
     }
 
-    return <img className={`${styles.parent}`} src={getAvatar(username)} />
+    return <img alt={`An avatar image of ${alt}`} className={`${styles.parent}`} src={getAvatar(username)} />
 }
 
 export default Avatar
