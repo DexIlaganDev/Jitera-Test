@@ -1,23 +1,22 @@
 .card {
     
-    // Header
-    &__header {}
+    &__actions {
 
-    &__figure {}
+        
+        display:flex;
+        flex-direction: row;
 
-    &__image {}
+        background-color : var(--secondary);
+        padding-block : .5rem;
 
-    // Body
+        > button {
+            flex : 1;
+        }
 
-    &__body {}
-
-    &__copy {}
-
-    // Footer
-    
-    &__footer {}
-
-    &__actions {}
+        &-icon {
+            color : gray;
+        }
+    }
 
 
 }
