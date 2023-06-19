@@ -16,7 +16,7 @@ import User from '@/pages/Jitera/views/User.view';
 const JiteraPage = () => {
 
     // Get User Hook
-    const { users, isLoading } = useGetUsers()
+    const { users } = useGetUsers()
 
     return (
         <Grid className='jitera-page' container spacing={3} rowGap={5}>
